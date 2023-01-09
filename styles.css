@@ -1,30 +1,18 @@
 body {
     margin: 0;
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: cursive;
     font-size: 15px;
   }
   
-  
   h1 {
-    font-family: 'Sacramento', cursive;
+    font-family: 'Times', cursive;
     font-size: 4rem;
     font-weight: bold;
     margin: 2% auto 0 auto;
     color: navy;
   }
-  
-  h2 {
-    font-size: 2.5rem;
-    color: #42032C;
-    font-weight: normal;
-    font-family: 'Amaranth', sans-serif;
-  }
-  
-  h3 {
-    color: #874C62;
-  }
-  
+
   p {
     font-size: 1.125rem;
   }
@@ -108,7 +96,7 @@ body {
     'img txt';
   }
   
-  .profile-img,
+  .profile-picture,
   iframe {
     width: 50%;
     min-width: 24rem;
@@ -116,22 +104,9 @@ body {
     grid-area: img;
     margin: 5% auto;
     position: relative;
-    /* animation-name: profile-img-slide;
-    animation-duration: 1s;  
-    animation-fill-mode: forwards; */
   }
   
-  
-  /* @keyframes profile-img-slide {
-    from {top: -25%;}
-    to {top: 0;}
-  } */
-  
-  .skill-title {
-    margin: 1
-  }
-  
-  .profile-title {
+  .profile-info {
     grid-area: title;
     text-align: left;
     margin: 0 0 5% 10%;
@@ -188,8 +163,7 @@ body {
   
   }
   
-  .skill-row,
-  .portfolio,
+  .projects,
   .contact-me {
     /* width: 50%; */
     margin: 5.625rem auto 5.625rem auto;
@@ -212,87 +186,9 @@ body {
   }
   
   
-  /* Cards */
-  
-  .card {
-    border: none;
-  
-  }
-  
-  
-  /* .flip-card {
-    width: 75%;
-    height: 350px;
-    perspective: 1000px; 
-    margin: auto;
-  }
-  
-  .flip-card-inner {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position:  absolute;
-    width: 100%;
-    border-radius: 2%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    color: #694E4E;
-  }
-  
-  .flip-card-back {
-    background-color: #F7E6B5;
-    transform: rotateY(180deg);
-  } */
-  
-  
-  /* SKills  */
-  .card-custom {
-  background-color: #FFF8E1;
-  
-  }
-  
-  .skill__wrap {
-    position: relative;
-    width: 75%;
-    height: 75%;
-    margin: auto auto 10% auto;
-  }
-  
-  .skill__description {
-    position: absolute;
-    top: 0;
-    bottom: 5%;
-    left: 0;
-    right: 0;
-    background: #785E5C;
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-    border-radius: 2%;
-    vertical-align: middle;
-    /* transition effect. not necessary */
-    transition: opacity .2s, visibility .2s;
-  }
-  
-  .skill__wrap:hover .skill__description {
-    visibility: visible;
-    opacity: .75;
-  }
-  
-  /* Portfolios */
-  .portfolio-img {
+
+  /* Projects */
+  .project-img {
     object-fit: cover;  
     width: 26vw;
     height: 20vw;
@@ -300,18 +196,18 @@ body {
     border-radius: 2%;
   }
   
-  .portfolio-desc {
+  .project-desc {
     text-shadow: 0.5px 0.5px 0.5px #785E5C;
   }
   
-  .portfolio__wrap {
+  .project__wrap {
     position: relative;
     /* width: 75%;
     height: 75%; */
     margin: auto;
   }
   
-  .portfolio__description {
+  .project__description {
     position: absolute;
     top: 0;
     bottom: 5%;
@@ -328,7 +224,7 @@ body {
     transition: opacity .2s, visibility .2s;
   }
   
-  .portfolio__wrap:hover .portfolio__description {
+  .project__wrap:hover .project__description {
     visibility: visible;
     opacity: .95;
   
@@ -347,7 +243,7 @@ body {
     text-align: center;
   }
   
-  /* Buttons */
+  //* Buttons *//
   .btn {
     background-image: linear-gradient(top, #42032C, #411530);
     background-image: linear-gradient(to bottom, #42032C, #411530);
@@ -370,7 +266,7 @@ body {
     color:#F7E6B5;
   }
   
-  /* Sections */
+  //* Sections *//
   .top-section {
     align-content: center;
     background-color: #FFEDDC;
@@ -391,7 +287,7 @@ body {
   }
   
   
-  .portfolio-section {
+  .projects-section {
     padding-top: 3.125rem;
     padding-bottom: 3.125rem;
   }
@@ -403,7 +299,7 @@ body {
   }
   
   
-  /* Footer */
+  //* Footer *//
   .footer-link {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -411,109 +307,5 @@ body {
   .footer-link:hover {
     color: #FFFBE9;
   }
-  
-  .copyright {
-    color: #FFFBE9;
-    margin-top:1.25rem;
-  
-  }
-  
-  /* Media Responsive - medium screen*/
-  @media screen and (max-width: 1200px) {
-    .portfolio-img {
-      width: 28vw;
-      height: 21vw;
-    }
-  
-    .portfolio-desc {
-      font-size: smaller;
-    }
-  
-    .portfolio-desc {
-      font-size: smaller;
-    }
-  
-    .card-link {
-      font-size: smaller;
-    }
-  }
-  
-  /* Media Responsive - small screen*/
-  @media screen and (max-width: 768px) {
-    .top-container {
-      padding-top: 6rem;
-      padding-bottom: 2rem;
-      margin: auto;
-    }
-  
-    .social {
-      margin: auto;
-    }
-  
-    .skill-row,
-    .portfolio,
-    .contact-me {
-      /* width: 50%; */
-      margin: 2.5rem auto;
-      text-align: center;
-      line-height: 1.5;
-    }
-  
-    .profile {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.75fr 0.75fr 0.5fr;
-        grid-template-areas:
-        'img'
-        'title'
-        'txt'
-        ;
-     }
-  
-     .profile.picture {
-      min-width: 24rem;
-      margin: 3% auto;
-     }
-  
-     .profile-title {
-      text-align: center;
-      margin: 3% auto;
-     }
-  
-     .profile-txt{
-      margin: 0;  
-      text-align: center;   
-   
-    }
-  
-     .intro-sent {
-      text-align: center;   
-      margin: auto;
-      font-size: 1.125rem;
-    }
-  
-  
-    .middle-container {
-      padding-top: 3.125rem;
-      padding-bottom: 3.125rem;
-      background-color: #FFF8E1;
-      background: linear-gradient(0deg,#FFBC80, #FFF8E1,#FFF8E1);
-      background-size: 100% 200%;
-    }
-  
-    .portfolio-img {
-      width: 80vw;
-      height: 60vw;
-    }
-  
-    .portfolio-desc {
-      font-size: larger;
-    }
-  
-    h5.card-title {
-      font-size: larger;
-    }
-  
-    .card-link {
-      font-size: larger;
-    }
-  }
+ 
+ 
