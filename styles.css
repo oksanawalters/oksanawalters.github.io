@@ -3,6 +3,7 @@ body {
     text-align: center;
     font-family: cursive;
     font-size: 15px;
+    background: #008B8B;
   }
   
   h1 {
@@ -228,21 +229,6 @@ body {
     visibility: visible;
     opacity: .95;
   
-  }
-  
-  .invite {
-    width: 50%;
-    color: #181818;
-    margin: 0 auto 0 auto;
-    line-height: 2;
-  }
-  
-  .persuade {
-    margin:50px auto;
-    width: 75%;
-    text-align: center;
-  }
-  
   //* Buttons *//
   .btn {
     background-image: linear-gradient(top, #42032C, #411530);
@@ -269,7 +255,7 @@ body {
   //* Sections *//
   .top-section {
     align-content: center;
-    background-color: #FFEDDC;
+    background-color: #008B8B;
     padding-top: 8.75rem;
     padding-bottom: 6rem;
   }
