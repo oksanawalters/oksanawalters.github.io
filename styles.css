@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    text-align: center;
+    text-align: right;
     font-family: cursive;
     font-size: 15px;
     background: #006666;
@@ -24,7 +24,7 @@ body {
   }
   
   a:hover {
-    color:#D36B00;
+    color: white;
   }
  
  
