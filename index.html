@@ -1,76 +1,113 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Oksana Walters</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Lato&family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href=https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css>
+  <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#home">Oksana Walters</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Introduction">Introduction</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Projects
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="https://oksanawalters.github.io/PacMen/">PacMen</a></li>
-                  <li><a class="dropdown-item" href="https://oksanawalters.github.io/Eye-Movement/">Eye-Movement</a></li>
-                  <li><a class="dropdown-item" href="https://oksanawalters.github.io/Real-Time-Bus-Tracker/">Real-Time-Bus-Tracker</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-<div class="top-section" id="home">
-<div class="profile">
 
-<div class="profile-picture"><img src="pic.jpg"/></div>
-<div class="intro">
-    <div class="profile-info">
-        <h1>Welcome!</h1>
-        <h1>My name is Oksana</h1>
-        <p class="intro-sent">I live in Seattle, Washington. I am a Project Manager at <a href="https://www.meta.com/">Meta</a>. I work with engineers in augmented reality team.</p>
-        <p class="intro-sent">I am looking to switch my career to web development/software engineering.</p>
-        <p class="intro-sent">Thank you for visiting my page!</p>
-      </div>    
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                       
+      </button>
+      <a class="navbar-brand" href="#">Oksana Walters</a>
     </div>
-</div>
-</div>
-<div class="middle-section">
-    <div class="projects-section"></div>
-    <div class="contact-section"></div>
-</div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+       <li><a href="#home">Home</a></li>
+        <li><a href="#Introduction">Introduction</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<div class="bottom-section">
-    <a class="footer-link" href="https://github.com/oksanawalters" target="_blank">GitHub</a>
-    <a class="footer-link" href="mailto:oksanawalters@gmail.com">Email</a>
-    <a class="footer-link" href="https://www.linkedin.com/in/oksana-walters-29bb2b117/" target="_blank">LinkedIn</a>
 
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+<div class="top-container" id="home">
+    <div class="profile">
+      <img class="profile-img" src="pic.jpg" alt="Oksana-profile">
+
+      <iframe class="profile-video" style="display: none" width="20vw" height="400vw" frameborder="0" scrolling="auto" src="https://youtube.com/embed/3lKs8EeLFyc?mute=1"></iframe>
+      <!-- playlist=-vf1tjDOHPo&loop=1 -->
+
+      <div class="profile-title">
+        <h2>Welcome!</h2> 
+        <h2>My name is Oksana.</h2>
+      </div>
+
+      <div class="profile-txt">
+        <h4 class="intro-sent">I live in Seattle, Washington. I am a Project Manager at <a href="https://www.meta.com/">Meta</a>. I work with engineers in augmented reality team.</h4>
+        <h4 class="intro-sent">I am looking to switch my career to web development/software engineering.</h4>
+        <h4 class="intro-sent">Thank you for visiting my page!</h4>
+      </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="container-fluid" style="text-align: center;" id="Projects">
+     <div class="myprojects">
+     <h1>My Projects</h1>
+      <div class="row">
+
+        <div class="col-sm-4" style="background-color:lavender;">
+            <h3>PacMen</h3>
+            <p>This web page that populates PacMan faces and makes them bounce around the screen. </p>
+            <p>When you click on "Add PacMan" a face appears and "Start Game" makes it move.</p>
+            <p>Please follow this <a href="https://oksanawalters.github.io/PacMen/">link</a> to test it yourself.</p>
+            <p>When the page is loaded click on "Add PacMan" and "Start Game".</p>
+        </div>
+
+        <div class="col-sm-4" style="background-color: #006666">
+            <h3>Bus Tracker</h3>
+            <p>This interactive web page shows the map of bus stops between MIT and Harvard. </p>
+            <p>The marker moves from one bus stop to another.</p>
+            <p>Please follow this <a href="https://oksanawalters.github.io/Real-Time-Bus-Tracker/">link</a> to test it yourself.</p>
+            <p>Click on "Show stops between MIT and Harvard".</p>
+        </div>
   
-    
+        <div class="col-sm-4" style="background-color:lavender;">
+            <h3>Eye Movement</h3>
+            <p>This Project is an interactive web page. </p>
+            <p>The eyes you see on the screen will follow your mouse movements on this web page.</p>
+            <p>Please follow this <a href="https://oksanawalters.github.io/Eye-Movement/">link</a> to test it yourself.</p>
+            <p>When the page is loaded, move your mouse around.</p>
+        </div>
+
+      </div>
+    </div> 
+  
+</div>
+
+<footer class="container-fluid text-center" id="Contact">
+   
+    <div class="bottom-section">
+        <div class="contact-section"></div>
+        <a class="footer-link" href="https://github.com/oksanawalters" target="_blank">GitHub</a>
+        <a class="footer-link" href="mailto:oksanawalters@gmail.com">Email</a>
+        <a class="footer-link" href="https://www.linkedin.com/in/oksana-walters-29bb2b117/" target="_blank">LinkedIn</a>
+    </div>
+
+</footer>
+
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js></script>
+<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
     
