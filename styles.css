@@ -1,30 +1,78 @@
-body {
-    margin: 0;
-    text-align: right;
-    font-family: cursive;
-    font-size: 15px;
-    background: #006666;
+/* Grids */
+
+/* Profile */
+.profile {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'img title'
+    'img title'
+    'img txt'
+    'img txt';
+    background-color: #006666;
   }
   
-  h1 {
-    font-family: 'Times', cursive;
-    font-size: 4rem;
-    font-weight: bold;
-    margin: 2% auto 0 auto;
-    color: white;
+  .profile-img,
+  iframe {
+    width: 65%;
+    min-width: 24rem;
+    filter: brightness(108%) saturate(90%);
+    grid-area: img;
+    margin: 5% auto;
+    position: relative;
+  }
+  
+  .profile-title {
+    grid-area: title;
+    text-align: left;
+    margin: 0 0 5% 10%;
+    position: relative;
+  }
+  
+  .profile-txt {
+    grid-area: txt;
+    margin: 0 0 5% 10%;
+    position: relative;
+  }
+  
+  .git-user {
+    font-size: x-small;
+  }
+  /* Texts */
+  .intro-sent {
+    width: 75%;
+    color: #181818;
+    line-height: 2;
+    text-align: left;
+    font-size: 1.8rem;
   }
 
-  p {
-    font-size: 1.125rem;
-  }
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        background-color: aquamarine;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font: 1.2em sans-serif;
+      }
   
-  a {
-    color: white;
-    text-decoration: none;
-  }
+      /* Add a gray background color and some padding to the footer */
   
-  a:hover {
-    color: white;
-  }
- 
- 
+      footer {
+        background-color: burlywood;
+        padding: 25px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 3rem;
+      }
+  
+      h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: blue;
+      }
+ h2{
+    font-family: 'Sacramento', cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #F0FFFF;
+ }
